@@ -9,12 +9,16 @@ function App() {
       <a className={link} href="www.google.com" target="_blank">
         {link}
       </a>
-      <Paintings
-        url={paintings[1].url}
-        title={paintings[0].title}
-        price={paintings[0].price}
-        id={paintings[0].id}
-      />
+      {paintings.map((el) => (
+        <Paintings
+          key={el.id}
+          url={el.url}
+          title={el.title}
+          price={el.price}
+          id={el.id}
+          quantity={el.quantity}
+        />
+      ))}
     </div>
   );
 }
