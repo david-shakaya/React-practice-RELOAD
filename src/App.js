@@ -10,7 +10,7 @@ function App() {
         {link}
       </a>
       <Paintings
-        url={paintings[0].url}
+        url={paintings[1].url}
         title={paintings[0].title}
         price={paintings[0].price}
         id={paintings[0].id}
