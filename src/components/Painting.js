@@ -1,5 +1,3 @@
-// import React from 'react';
-
 const Paintings = ({ url, title, price, id }) => {
   return (
     <>
@@ -8,7 +6,7 @@ const Paintings = ({ url, title, price, id }) => {
         Цена за покупку фото : <strong>{price}грн.</strong>
       </p>
       <p>Id-фотки: {id}</p>
-      <img src={url} alt={title} />
+      <img src={url} alt={title} width="300px" />
     </>
   );
 };
