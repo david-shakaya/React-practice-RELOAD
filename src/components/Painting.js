@@ -13,7 +13,7 @@ import PropTypes from "prop-types";
  *
  */
 
-const Paintings = ({ url = defaultImg, title, price, id, quantity }) => {
+const Painting = ({ url = defaultImg, title, price, id, quantity }) => {
   return (
     <div>
       <h1>{title}</h1>
@@ -28,9 +28,9 @@ const Paintings = ({ url = defaultImg, title, price, id, quantity }) => {
   );
 };
 
-export default Paintings;
+export default Painting;
 
-Paintings.propTypes = {
+Painting.propTypes = {
   url: PropTypes.string,
   title: PropTypes.string,
   price: PropTypes.number,
