@@ -10,6 +10,8 @@ import PropTypes from "prop-types";
  *   {isOnlyne && 'Онлайн'}
  *  Если isOnlyne === true то рендерим строку онлайн если фолс рендерим офлайн
  *   {isOnlyne ? 'Онлайн': Офлайн}
+ * Если isOnlyne === true то рендерим строку онлайн если фолс рендерим офлайн
+ * { isOnlyne ?? OFline}
  *
  */
 
@@ -31,9 +33,9 @@ const Painting = ({ url = defaultImg, title, price, id, quantity }) => {
 export default Painting;
 
 Painting.propTypes = {
-  url: PropTypes.string,
-  title: PropTypes.string,
-  price: PropTypes.number,
-  id: PropTypes.string,
-  quantity: PropTypes.number,
+  url: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
+  quantity: PropTypes.number.isRequired,
 };

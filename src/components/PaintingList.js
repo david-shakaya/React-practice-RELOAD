@@ -1,16 +1,17 @@
+import PropTypes from "prop-types";
 import Painting from "./Painting";
 
 function PaintingList({ items }) {
   return (
     <ul>
-      {items.map((el) => (
-        <li key={el.id}>
+      {items.map((item) => (
+        <li key={item.id}>
           <Painting
-            url={el.url}
-            title={el.title}
-            price={el.price}
-            id={el.id}
-            quantity={el.quantity}
+            url={item.url}
+            title={item.title}
+            price={item.price}
+            id={item.id}
+            quantity={item.quantity}
           />
         </li>
       ))}
@@ -18,4 +19,11 @@ function PaintingList({ items }) {
   );
 }
 
+PaintingList.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+    })
+  ),
+};
 export default PaintingList;
