@@ -1,5 +1,5 @@
-import defaultImg from "./default-image.jpg";
-import PropTypes from "prop-types";
+import defaultImg from './default-image.jpg';
+import PropTypes from 'prop-types';
 
 // url = defaultImg; если картинка не придет с сервера загрузится фото по умочанию
 
@@ -24,7 +24,7 @@ const Painting = ({ url = defaultImg, title, price, id, quantity }) => {
       </p>
       <p>Id-фотки: {id}</p>
       <img src={url} alt={title} width="300px" />
-      <p>Количетсво: {quantity > 5 ? "Еще много" : "ЗАканчивается"} </p>
+      <p>Количетсво: {quantity > 5 ? 'Еще много' : 'ЗАканчивается'} </p>
       <button>Добавить в корзину</button>
     </div>
   );
