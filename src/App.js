@@ -5,6 +5,7 @@ function App() {
   return (
     <div className="App">
       <PaintingList items={paintings} />
+      <div><div>
     </div>
   );
 }
