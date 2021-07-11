@@ -1,6 +1,7 @@
 import paintings from './data/paintings.json';
 import PaintingList from './components/PaintingList/PaintingList';
 import ColorPicker from './components/ColorPicker/ColorPicker';
+import Alert from './components/Alert/Alert';
 
 const colorPickerOptions = [
   { label: 'red', color: '#F44336' },
@@ -16,6 +17,9 @@ function App() {
     <div className="App">
       <PaintingList items={paintings} />
       <ColorPicker options={colorPickerOptions} />
+      <Alert text="Шеф все пропало!!" type="alert" />
+      <Alert text="Шеф все пропало!!" type="alertSuccessfully" />
+      <Alert text="Шеф все пропало!!" type="alertError" />
     </div>
   );
 }

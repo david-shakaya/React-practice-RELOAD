@@ -1,0 +1,16 @@
+.alert {
+  padding: 20px;
+  background-color: gray;
+  color: white;
+}
+
+.alertSuccessfully {
+  composes: alert;
+  /* Добавляет в клас alertSuccessfully все стили с класа alert */
+  background-color: green;
+}
+
+.alertError {
+  composes: alert;
+  background-color: red;
+}
