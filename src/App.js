@@ -3,6 +3,7 @@ import Container from './components/Container/Container';
 import PaintingList from './components/PaintingList/PaintingList';
 import ColorPicker from './components/ColorPicker/ColorPicker';
 import Alert from './components/Alert/Alert';
+import Counter from './components/Counter/Counter';
 
 const colorPickerOptions = [
   { label: 'red', color: '#F44336' },
@@ -17,6 +18,7 @@ function App() {
   return (
     <div className="App">
       <Container>
+        <Counter />
         <PaintingList items={paintings} />
         <ColorPicker options={colorPickerOptions} />
         <Alert text="Шеф все пропало!!" type="alert" />
